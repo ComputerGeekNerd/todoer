@@ -1,0 +1,31 @@
+{
+	"name": "todoer",
+	"version": "1.0.0",
+	"description": "A basic web-based todo-tracker app",
+	"main": "index.js",
+	"scripts": {
+		"scss": "gulp sass",
+		"watch": "gulp watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ComputerGeekNerd/todoer.git"
+	},
+	"keywords": [
+		"todo",
+		"todo-list",
+		"js-projects"
+	],
+	"author": "Raksha Aasish",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ComputerGeekNerd/todoer/issues"
+	},
+	"homepage": "https://github.com/ComputerGeekNerd/todoer#readme",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-sass": "^5.1.0",
+		"sass": "^1.62.1"
+	}
+}

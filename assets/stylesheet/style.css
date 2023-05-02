@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  background: rgba(254, 202, 26, 0.1);
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.todo-app {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+.todo-app .todo-input-div {
+  display: flex;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.todo-app .toggler {
+  display: none;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99ccff;
+  cursor: pointer;
+}
+.todo-app .todo-input {
+  display: block;
+  width: 85%;
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+  padding: 0.75em 1em;
+  outline: none;
+  background: white;
+  border: 0.75px solid lightgrey;
+}
+.todo-app .info-bar {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #bcd472;
+  border: 0.75px solid lightgrey;
+}
+.todo-app .info-buttons {
+  cursor: pointer !important;
+  outline: none;
+  border: none;
+  border: 0.5px solid lightgrey;
+  border-radius: 0.2em;
+  padding: 7px;
+}
+.todo-app .todo-ul .todo-item {
+  display: flex;
+  position: relative;
+  padding: 1em 0;
+  background: #adbce6;
+  border: 1.1px solid lightgrey;
+}
+.todo-app .todo-ul .checkbox-div {
+  width: 17.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-app .todo-ul .checkbox-input {
+  transform: scale(1.5);
+  border-radius: 100%;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.todo-app .todo-ul .todo-text {
+  width: 82.5%;
+  padding: 0 0.1em;
+  font-size: 20px;
+}
+.todo-app .todo-ul .todo-strike {
+  text-decoration: line-through;
+}
+.todo-app .todo-ul .clear-close {
+  position: absolute;
+  font-weight: bold;
+  top: 35%;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+}
+.todo-app .todo-ul .clear-close:hover {
+  display: block;
+  background: #e6bbad;
+  transform: scale(1.5);
+}
+.todo-app .todo-text:hover + .clear-close {
+  display: block;
+}
+.todo-app .items-left {
+  font-size: 1rem;
+  margin-left: auto;
+  padding: 1em 0.3em 1em 10em;
+  background: #f5f5f5;
+  border: 0.75px solid lightgrey;
+}
+.todo-app .double-click-input {
+  width: 100%;
+  font-family: Abel;
+  padding: 0.5em 0.5em;
+  font-size: 22px;
+  outline: none;
+}
+.todo-app .todo-done-marker {
+  background: #ade6bb !important;
+}
+.todo-app .clear-completed-todos {
+  background: #e6bbad !important;
+}
+
+#footer {
+  align-self: center;
+  color: #622efe;
+  font-weight: 900;
+}
+
+#intro-text {
+  margin: 50px auto;
+  text-align: center;
+  color: #622efe;
+}
+#intro-text h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 900;
+  font-style: italic;
+}

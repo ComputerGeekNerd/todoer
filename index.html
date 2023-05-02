@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todoer</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/stylesheet/style.css" />
+	</head>
+	<body>
+		<script src="./index.js" defer></script>
+		<div id="intro-text">
+			<h1>TODOER</h1>
+			<h3>A simple TODO List tracker</h3>
+		</div>
+		<div class="container">
+			<div class="todo-app">
+				<div class="todo-input-div">
+					<div class="toggler">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<input
+						class="todo-input"
+						type="text"
+						placeholder="What needs to be done?"
+					/>
+				</div>
+				<ul class="todo-ul"></ul>
+                <div class="items-left">0 tasks left</div>
+				<div class="info-bar">
+					<button class="all-todos info-buttons">All</button>
+					<button class="active-todos info-buttons">Active</button>
+					<button class="completed-todos info-buttons">
+						Done
+					</button>
+					<button class="clear-completed-todos info-buttons">
+						Clear Done Tasks
+					</button>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">Created By: Raksha Aasish</footer>
+	</body>
+</html>
